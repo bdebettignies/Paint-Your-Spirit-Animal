@@ -24,3 +24,37 @@ function drawPresent(x,y){
   rect(random(0,800),random(550,800),50,50);
  }
 }
+
+
+
+
+
+
+function setup() {
+createCanvas(800,800);
+background(153,204,204);
+drawPresent();
+}
+
+function draw() {
+//draw ground
+//fill(255,255,255);
+//rect(0,600,800,200);
+//christmas tree
+fill(22,71,38);
+triangle(400,300,150,550,650,550);
+triangle(400,250,200,450,600,450);
+triangle(400,200,250,350,550,350);
+triangle(400,150,300,250,500,250);
+//trunk
+fill(71,53,22);
+rect(375,550,50,70);
+}
+function drawPresent(x,y){
+  fill(0,0,0);
+  rect(x,y,30,50);
+  for(var i=1; i<30; i++){
+  fill(random(0,255),random(0,255),random(0,255));
+  rect(random(100,700),random(550,730),50,50);
+ }
+}
